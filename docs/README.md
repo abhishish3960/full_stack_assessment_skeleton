@@ -308,7 +308,28 @@ For running do `npm run dev`.
 
 ### solution
 
-> explain briefly your solution for this problem here
+>  Overview
+- APIs Implementation:
+  - /user/find-all: Fetches and returns all users.
+  - /home/find-by-user: Fetches and returns all homes related to a specific user.
+  - /user/find-by-home: Fetches and returns all users related to a specific home.
+  - /home/update-users: Updates the list of users related to a specific home based on the input.
+- Technology:
+  - Framework: Express.js
+  - ORM: Sequelize
+  - CORS: Enabled for cross-origin resource sharing<br/>
+
+For running first `cd to backend` then run `npm install` for installation of dependencies.<br/>
+Then for running use `node app.js`.<br/>
+- `Controllers:`
+  - Purpose: Manage business logic and data processing for API requests.
+  - Function: Process incoming requests, interact with models, and return responses.
+- `Models:`
+  - Purpose: Define data structures and interact with the database.
+  - Function: Bind JSON queries to database entities and perform CRUD operations.
+- `Routes:`
+  - Purpose: Define URL endpoints and map them to controller functions.
+  - Function: Handle incoming HTTP requests and route them to appropriate controllers.
 
 ## Submission Guidelines
 
