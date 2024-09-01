@@ -245,7 +245,7 @@ docker-compose -f docker-compose.initial.yml up --build -d
 - Styling:
     - CSS: UsedTailwind CSS for styling, ensuring responsiveness and simplicity.<br/>
     
-First do `npm install` for installing all the dependencies.<br/>
+First `cd to frontend` and then do `npm install` for installing all the dependencies.<br/>
 For running do `npm run dev`.
 
 
