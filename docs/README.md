@@ -129,7 +129,15 @@ docker-compose -f docker-compose.initial.yml up --build -d
 
 ### solution
 
-> explain briefly your solution for this problem here
+> To normalize the database, we will:
+
+- **Create user and home Tables:**
+  - user: Stores user attributes (username, email).
+  - home: Stores home attributes (street_address, city, state, zip_code).
+- **Create user_home_interest Table:**
+  - Manages the many-to-many relationship between users and homes.
+  - Contains username and street_address as foreign keys referencing user and home tables.<br/>
+- This design ensures data is properly normalized and relationships are managed through foreign keys.
 
 ## 2. React SPA
 
