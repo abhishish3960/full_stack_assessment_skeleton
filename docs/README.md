@@ -228,7 +228,26 @@ docker-compose -f docker-compose.initial.yml up --build -d
 
 ### solution
 
-> explain briefly your solution for this problem here
+> overview
+- Homes for User Page:
+    - Dropdown: Implement a single-select dropdown at the top to select a user.
+    - Home Cards: Display a list of homes related to the selected user in cards below the dropdown.
+- Edit User Functionality:
+  - Modal: Each home card includes an "Edit User" button, which opens a modal.
+  - Checkboxes: The modal shows all users with checkboxes pre-selected based on current associations.
+  - Edit Users: Allow toggling of checkboxes to update user associations. On "Save," update the related users in the database and reflect changes on the Homes for User page. On "Cancel," close the modal without changes.
+  - Validation: Ensure at least one user is selected before enabling the "Save" button.
+- Data Fetching:
+    - RTK Query: Use RTK Query to fetch data for users and homes.
+    - Loading and Errors: Show a loading spinner or skeleton during data fetching and handle errors gracefully.
+- State Management:
+    - Redux Toolkit: Use Redux Toolkit to manage the application state, including user and home data.
+- Styling:
+    - CSS: UsedTailwind CSS for styling, ensuring responsiveness and simplicity.<br/>
+    
+First do `npm install` for installing all the dependencies.<br/>
+For running do `npm run dev`.
+
 
 ## 3. Backend API development on Node
 
